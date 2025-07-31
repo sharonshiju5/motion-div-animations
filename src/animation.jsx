@@ -18,14 +18,43 @@ function animation() {
     return(
       <>
       <Link to={"/"}>
-      <button style={{position:"absolute",left:"40px"}}>view button and text ani mation</button>
+      <button className="btn">view button and text ani mation</button>
       </Link>
-      <>
+      < >
+            <h1 style={{ 
+        color: 'white', 
+        textAlign: 'center', 
+        marginBottom: '60px', 
+        fontSize: '2.5rem',
+        background: 'linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+        marginLeft:"-120px"
+      }}>
+        Ultimate Animation Showcase
+      </h1>
+      
+      {/* TEXT ANIMATIONS SECTION */}
+      <h2 style={{ 
+        color: '#4ecdc4', 
+        textAlign: 'center', 
+        marginBottom: '30px', 
+        fontSize: '2rem',
+        marginLeft:"-120px",
+        textShadow: '0 0 10px #4ecdc4',
+      }}>
+        div Animations Collection
+      </h2>
+      
+
+
+
          1️⃣ Fade In + Slide Up (Default Smooth Scroll)
         jsx
         Copy
         Edit
-        <motion.div className="animation"
+        <motion.div className="animation divv"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}

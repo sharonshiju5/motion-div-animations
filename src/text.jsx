@@ -12,7 +12,7 @@ const SeparateTextButtonAnimations = () => {
   return (
     <>
     <Link to={"/div"}>
-    <button>animation of div</button>
+    <button className="btn">animation of div</button>
     </Link>
     <>
     <div style={{ 
