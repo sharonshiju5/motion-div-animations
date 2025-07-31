@@ -2006,8 +2006,8 @@ function animation() {
                   <h2>Neutrino Detection</h2>
                 </motion.div>
                 
-              </div>
             </div>
+        </div>
 
         <>
         
