@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from 'framer-motion';
 import "./animation.css"
+import { Link } from "react-router-dom";
 function animation() {
 
     const [text, setText] = useState("");
@@ -15,8 +16,11 @@ function animation() {
       return () => clearInterval(interval);
     }, []);
     return(
-        <>
-
+      <>
+      <Link to={"/"}>
+      <button style={{position:"absolute",left:"40px"}}>view button and text ani mation</button>
+      </Link>
+      <>
          1️⃣ Fade In + Slide Up (Default Smooth Scroll)
         jsx
         Copy
@@ -2010,7 +2014,7 @@ function animation() {
         </div>
 
         <>
-        
+        </>
         </>
         </>
     )
