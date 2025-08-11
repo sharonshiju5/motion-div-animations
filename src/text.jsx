@@ -8,7 +8,7 @@ const SeparateTextButtonAnimations = () => {
   const handleClick = (id) => {
     setClickStates(prev => ({ ...prev, [id]: !prev[id] }));
   };
-
+  
   return (
     <>
     <Link to={"/div"}>
@@ -78,6 +78,7 @@ const SeparateTextButtonAnimations = () => {
         >
           <h3 style={{ margin: 0, fontSize: '1.8rem' }}>Fade In Up</h3>
           <p style={{ margin: '10px 0 0 0', opacity: 0.8 }}>Standard fade with upward motion</p>
+            <button>copy</button>
         </motion.div>
 
         {/* 2. Typewriter Effect */}

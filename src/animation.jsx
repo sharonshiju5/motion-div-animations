@@ -15,6 +15,11 @@ function animation() {
       }, 100);
       return () => clearInterval(interval);
     }, []);
+
+    const copyToClipboard = (code) => {
+      navigator.clipboard.writeText(code);
+      alert('Code copied to clipboard!');
+    };
     return(
       <>
       <Link to={"/"}>
@@ -61,6 +66,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Fade In + Slide Up</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Fade In + Slide Up</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -75,6 +88,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Fade In + Slide Down</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, y: -50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Fade In + Slide Down</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -89,6 +110,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Fade In + Scale Up</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, scale: 0.8 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Fade In + Scale Up</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -103,6 +132,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Rotate In</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, rotate: -15 }}
+  whileInView={{ opacity: 1, rotate: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Rotate In</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -117,6 +154,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Skew In</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, skewX: 15 }}
+  whileInView={{ opacity: 1, skewX: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Skew In</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -131,6 +176,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Slide In From Left</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, x: -100 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Slide In From Left</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -145,6 +198,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Slide In From Right</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, x: 100 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Slide In From Right</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -159,6 +220,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Blur In</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, filter: "blur(10px)" }}
+  whileInView={{ opacity: 1, filter: "blur(0px)" }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Blur In</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -173,6 +242,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Zoom In</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, scale: 0.5 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Zoom In</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -187,6 +264,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Elastic Bounce In</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ type: "spring", stiffness: 120, damping: 10 }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Elastic Bounce In</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -201,6 +286,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Flip In X-Axis</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, rotateX: 90 }}
+  whileInView={{ opacity: 1, rotateX: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Flip In X-Axis</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -215,6 +308,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Flip In Y-Axis</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, rotateY: 90 }}
+  whileInView={{ opacity: 1, rotateY: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Flip In Y-Axis</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -229,6 +330,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Staggered Letters</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, x: -50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ staggerChildren: 0.2, duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Staggered Letters</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
             
             
@@ -243,6 +352,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Color Fade In</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, backgroundColor: "#000000" }}
+  whileInView={{ opacity: 1, backgroundColor: "#ff00ff" }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Color Fade In</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
         
 
@@ -252,6 +369,13 @@ function animation() {
           transition={{ duration: 1.5 }}
         >
           <h2>Fade In (Slow)</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 1.5 }}
+>
+  <h2>Fade In (Slow)</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -261,6 +385,13 @@ function animation() {
           transition={{ duration: 1 }}
         >
           <h2>Fade Out</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 1 }}
+  whileInView={{ opacity: 0 }}
+  transition={{ duration: 1 }}
+>
+  <h2>Fade Out</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -270,6 +401,13 @@ function animation() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2>Scale In</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ scale: 0 }}
+  whileInView={{ scale: 1 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+>
+  <h2>Scale In</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -279,6 +417,13 @@ function animation() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2>Scale Out</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ scale: 1 }}
+  whileInView={{ scale: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+>
+  <h2>Scale Out</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -289,6 +434,13 @@ function animation() {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <h2>Slide Up</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ y: 100, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.4, ease: "easeInOut" }}
+>
+  <h2>Slide Up</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -299,6 +451,13 @@ function animation() {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <h2>Slide Down</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ y: -100, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.4, ease: "easeInOut" }}
+>
+  <h2>Slide Down</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -308,6 +467,13 @@ function animation() {
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           <h2>Rotate Clockwise</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ rotate: 0, opacity: 0 }}
+  whileInView={{ rotate: 360, opacity: 1 }}
+  transition={{ duration: 1, ease: "easeInOut" }}
+>
+  <h2>Rotate Clockwise</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -317,6 +483,13 @@ function animation() {
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           <h2>Rotate Counter-Clockwise</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ rotate: 360, opacity: 0 }}
+  whileInView={{ rotate: 0, opacity: 1 }}
+  transition={{ duration: 1, ease: "easeInOut" }}
+>
+  <h2>Rotate Counter-Clockwise</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -326,6 +499,13 @@ function animation() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2>Flip X-Axis</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ rotateX: 90, opacity: 0 }}
+  whileInView={{ rotateX: 0, opacity: 1 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+>
+  <h2>Flip X-Axis</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -335,6 +515,13 @@ function animation() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2>Flip Y-Axis</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ rotateY: 90, opacity: 0 }}
+  whileInView={{ rotateY: 0, opacity: 1 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+>
+  <h2>Flip Y-Axis</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -344,6 +531,13 @@ function animation() {
           transition={{ duration: 0.6 }}
         >
           <h2>Skew Left</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ skewX: 30, opacity: 0 }}
+  whileInView={{ skewX: 0, opacity: 1 }}
+  transition={{ duration: 0.6 }}
+>
+  <h2>Skew Left</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -353,6 +547,13 @@ function animation() {
           transition={{ duration: 0.6 }}
         >
           <h2>Skew Right</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ skewX: -30, opacity: 0 }}
+  whileInView={{ skewX: 0, opacity: 1 }}
+  transition={{ duration: 0.6 }}
+>
+  <h2>Skew Right</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -362,6 +563,13 @@ function animation() {
           transition={{ duration: 0.8 }}
         >
           <h2>Blur In</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ filter: "blur(10px)", opacity: 0 }}
+  whileInView={{ filter: "blur(0px)", opacity: 1 }}
+  transition={{ duration: 0.8 }}
+>
+  <h2>Blur In</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -371,6 +579,13 @@ function animation() {
           transition={{ type: "spring", stiffness: 100, damping: 5 }}
         >
           <h2>Elastic Bounce</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ y: 50, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{ type: "spring", stiffness: 100, damping: 5 }}
+>
+  <h2>Elastic Bounce</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -385,6 +600,18 @@ function animation() {
           <motion.li initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             Item 2
           </motion.li>
+          <button onClick={() => copyToClipboard(`<motion.ul
+  initial="hidden"
+  whileInView="visible"
+  transition={{ staggerChildren: 0.2 }}
+>
+  <motion.li initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+    Item 1
+  </motion.li>
+  <motion.li initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+    Item 2
+  </motion.li>
+</motion.ul>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.ul>
 
 
@@ -394,6 +621,13 @@ function animation() {
           transition={{ duration: 1 }}
         >
           <h2>Gradient Shift</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ background: "linear-gradient(to right, red, yellow)" }}
+  whileInView={{ background: "linear-gradient(to right, blue, purple)" }}
+  transition={{ duration: 1 }}
+>
+  <h2>Gradient Shift</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
 
@@ -403,6 +637,13 @@ function animation() {
           transition={{ repeat: Infinity, duration: 2 }}
         >
           <h2>Wave Effect</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ y: 0 }}
+  animate={{ y: [0, -10, 0, 10, 0] }}
+  transition={{ repeat: Infinity, duration: 2 }}
+>
+  <h2>Wave Effect</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
         <span>Typewriter Text Animation</span>
@@ -415,6 +656,13 @@ function animation() {
           transition={{ duration: 1 }}
         >
           Color Fade
+          <button onClick={() => copyToClipboard(`<motion.h2
+  initial={{ color: "#000" }}
+  whileInView={{ color: "#FF0000" }}
+  transition={{ duration: 1 }}
+>
+  Color Fade
+</motion.h2>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.h2>
 
 
@@ -424,6 +672,13 @@ function animation() {
           transition={{ duration: 0.5 }}
         >
           <h2>Shake Effect</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ x: 0 }}
+  whileInView={{ x: [0, -10, 10, -10, 10, 0] }}
+  transition={{ duration: 0.5 }}
+>
+  <h2>Shake Effect</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
         
 
@@ -438,6 +693,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Morph Scale</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ scale: 0, borderRadius: "50%" }}
+  whileInView={{ scale: 1, borderRadius: "12px" }}
+  transition={{ duration: 0.8, ease: "easeInOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Morph Scale</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
         // 2. Magnetic Pull Effect
@@ -450,6 +713,15 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Magnetic Pull</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ x: -200, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+  whileHover={{ scale: 1.05, x: 10 }}
+  transition={{ type: "spring", stiffness: 300, damping: 20 }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Magnetic Pull</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
         // 3. Liquid Bounce Animation
@@ -461,6 +733,14 @@ function animation() {
           viewport={{ once: false, amount: 0.3 }}
         >
           <h2>Liquid Bounce</h2>
+          <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ y: 100, scaleY: 0.5, opacity: 0 }}
+  whileInView={{ y: 0, scaleY: 1, opacity: 1 }}
+  transition={{ type: "spring", stiffness: 400, damping: 15, mass: 0.8 }}
+  viewport={{ once: false, amount: 0.3 }}
+>
+  <h2>Liquid Bounce</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#4ecdc4', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
         </motion.div>
 
         // 4. Glitch Reveal Effect
@@ -943,6 +1223,29 @@ function animation() {
                   }}
                 >
                   <h2>Digital Rain</h2>
+                  <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ opacity: 0, y: -50 }}
+  whileInView={{ 
+    opacity: [0, 1, 0.7, 1], 
+    y: 0,
+    backgroundImage: [
+      "linear-gradient(0deg, transparent 0%, #00ff00 50%, transparent 100%)",
+      "linear-gradient(90deg, transparent 0%, #00ff00 50%, transparent 100%)",
+      "linear-gradient(180deg, transparent 0%, #00ff00 50%, transparent 100%)"
+    ]
+  }}
+  transition={{ duration: 2, times: [0, 0.3, 0.7, 1] }}
+  viewport={{ once: false, amount: 0.3 }}
+  style={{ 
+    padding: '20px', 
+    backgroundColor: '#001100', 
+    color: '#00ff00',
+    borderRadius: '8px',
+    border: '1px solid #00ff00'
+  }}
+>
+  <h2>Digital Rain</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#00ff00', color: '#001100', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
                 </motion.div>
                 
                 {/* 2. Fractal Zoom */}
@@ -1341,6 +1644,36 @@ function animation() {
                   }}
                 >
                   <h2>Prismatic Dispersion</h2>
+                  <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ 
+    opacity: 0,
+    skewX: 45,
+    skewY: 15,
+    scale: 0.3
+  }}
+  whileInView={{ 
+    opacity: 1,
+    skewX: [45, -15, 5, 0],
+    skewY: [15, -5, 2, 0],
+    scale: [0.3, 1.2, 0.9, 1],
+    background: [
+      "linear-gradient(45deg, #ff0000, #ff8800)",
+      "linear-gradient(45deg, #ff8800, #ffff00)",
+      "linear-gradient(45deg, #ffff00, #00ff00)",
+      "linear-gradient(45deg, #00ff00, #0088ff)",
+      "linear-gradient(45deg, #0088ff, #8800ff)"
+    ]
+  }}
+  transition={{ duration: 1.8, ease: "easeOut" }}
+  viewport={{ once: false, amount: 0.3 }}
+  style={{ 
+    padding: '20px', 
+    color: '#fff',
+    borderRadius: '8px'
+  }}
+>
+  <h2>Prismatic Dispersion</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#ff6b6b', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
                 </motion.div>
                 
                 {/* 16. Gravity Wave */}
@@ -1373,6 +1706,35 @@ function animation() {
                   }}
                 >
                   <h2>Gravity Wave</h2>
+                  <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ 
+    y: -100,
+    opacity: 0,
+    scaleY: 0.1
+  }}
+  whileInView={{ 
+    y: [0, 10, -5, 3, 0],
+    opacity: 1,
+    scaleY: [0.1, 0.8, 1.2, 0.9, 1]
+  }}
+  animate={{
+    y: [0, -8, 8, -4, 4, 0]
+  }}
+  transition={{ 
+    y: { repeat: Infinity, duration: 3, ease: "easeInOut" },
+    opacity: { duration: 0.8 },
+    scaleY: { duration: 1.2 }
+  }}
+  viewport={{ once: false, amount: 0.3 }}
+  style={{ 
+    padding: '20px', 
+    backgroundColor: '#0984e3', 
+    color: '#fff',
+    borderRadius: '8px'
+  }}
+>
+  <h2>Gravity Wave</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#0984e3', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
                 </motion.div>
                 
                 {/* 17. Temporal Distortion */}
@@ -1407,6 +1769,37 @@ function animation() {
                   }}
                 >
                   <h2>Temporal Distortion</h2>
+                  <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ 
+    opacity: 0,
+    scale: 1,
+    filter: "blur(20px) sepia(1)"
+  }}
+  whileInView={{ 
+    opacity: [0, 0.3, 0.7, 1],
+    scale: [1, 0.8, 1.1, 0.95, 1],
+    filter: [
+      "blur(20px) sepia(1)",
+      "blur(10px) sepia(0.7)",
+      "blur(5px) sepia(0.3)",
+      "blur(0px) sepia(0)"
+    ]
+  }}
+  transition={{ 
+    duration: 2,
+    times: [0, 0.3, 0.6, 1],
+    ease: "easeInOut"
+  }}
+  viewport={{ once: false, amount: 0.3 }}
+  style={{ 
+    padding: '20px', 
+    backgroundColor: '#fdcb6e', 
+    color: '#2d3436',
+    borderRadius: '8px'
+  }}
+>
+  <h2>Temporal Distortion</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#fdcb6e', color: '#2d3436', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
                 </motion.div>
                 
                 {/* 18. Magnetic Levitation */}
@@ -1444,6 +1837,40 @@ function animation() {
                   }}
                 >
                   <h2>Magnetic Levitation</h2>
+                  <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ 
+    y: 50,
+    opacity: 0,
+    boxShadow: "0 0px 0px rgba(108, 92, 231, 0)"
+  }}
+  whileInView={{ 
+    y: 0,
+    opacity: 1,
+    boxShadow: "0 10px 30px rgba(108, 92, 231, 0.3)"
+  }}
+  animate={{
+    y: [-3, 3, -3],
+    boxShadow: [
+      "0 10px 30px rgba(108, 92, 231, 0.3)",
+      "0 15px 40px rgba(108, 92, 231, 0.5)",
+      "0 10px 30px rgba(108, 92, 231, 0.3)"
+    ]
+  }}
+  transition={{ 
+    y: { repeat: Infinity, duration: 2, ease: "easeInOut" },
+    boxShadow: { repeat: Infinity, duration: 2, ease: "easeInOut" },
+    opacity: { duration: 0.8 }
+  }}
+  viewport={{ once: false, amount: 0.3 }}
+  style={{ 
+    padding: '20px', 
+    backgroundColor: '#6c5ce7', 
+    color: '#fff',
+    borderRadius: '8px'
+  }}
+>
+  <h2>Magnetic Levitation</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#6c5ce7', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
                 </motion.div>
                 
                 {/* 19. Crystalline Growth */}
@@ -1478,6 +1905,37 @@ function animation() {
                   }}
                 >
                   <h2>Crystalline Growth</h2>
+                  <button onClick={() => copyToClipboard(`<motion.div
+  initial={{ 
+    scale: 0,
+    opacity: 0,
+    rotate: 0,
+    clipPath: "polygon(50% 50%, 50% 50%, 50% 50%)"
+  }}
+  whileInView={{ 
+    scale: [0, 0.5, 1.1, 1],
+    opacity: 1,
+    rotate: [0, 45, 90, 45, 0],
+    clipPath: [
+      "polygon(50% 50%, 50% 50%, 50% 50%)",
+      "polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)",
+      "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)"
+    ]
+  }}
+  transition={{ 
+    duration: 1.5,
+    ease: "easeOut"
+  }}
+  viewport={{ once: false, amount: 0.3 }}
+  style={{ 
+    padding: '20px', 
+    backgroundColor: '#55a3ff', 
+    color: '#fff',
+    textAlign: 'center'
+  }}
+>
+  <h2>Crystalline Growth</h2>
+</motion.div>`)} style={{marginTop: '10px', padding: '5px 10px', backgroundColor: '#55a3ff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer'}}>Copy Code</button>
                 </motion.div>
                 
                 {/* 20. Plasma Storm */}
